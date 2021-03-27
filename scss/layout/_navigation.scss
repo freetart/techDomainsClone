@@ -1,0 +1,33 @@
+.navigation {
+  position: fixed;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &-logo {
+    img {
+      width: 10rem;
+    }
+  }
+
+  &-links {
+    a {
+      @include textStyles();
+      font-size: size(xs);
+      color: color(white);
+      padding: 2rem 2.5rem;
+      text-transform: uppercase;
+      outline: 0;
+      transition: background 0.3s ease-in-out;
+
+      &:hover,
+      &:focus,
+      &.current {
+        background: color(secondary);
+        border-bottom: 0.2rem solid color(primary);
+      }
+    }
+  }
+}

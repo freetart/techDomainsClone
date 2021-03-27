@@ -17,6 +17,8 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: color(black);
+  color: color(white);
 }
 
 img {
@@ -31,6 +33,14 @@ button {
 
 input {
   font-family: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 // REDUCE MOTION
