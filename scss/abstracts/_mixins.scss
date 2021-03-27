@@ -1,0 +1,38 @@
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+@mixin sectionSpacing() {
+  padding: 5rem 2rem;
+}
+
+@mixin headingStyles() {
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
+}
+
+@mixin textStyles() {
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  line-height: 1.6;
+}
+
+@mixin maxWidthLg() {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@mixin maxWidthMd() {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@mixin maxWidthSm() {
+  max-width: 1000px;
+  margin: 0 auto;
+}

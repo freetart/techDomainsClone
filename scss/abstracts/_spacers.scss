@@ -1,0 +1,74 @@
+// Margin & padding
+$spaceamounts: (1, 2, 3, 4, 5);
+
+@each $space in $spaceamounts {
+  // All around margin
+  .m-#{$space} {
+    margin: #{$space}rem;
+  }
+
+  // Verticle margin
+  .my-#{$space} {
+    margin: #{$space}rem 0;
+  }
+
+  // Horizontal margin
+  .mx-#{$space} {
+    margin: 0 #{$space}rem;
+  }
+
+  // Margin top
+  .mt-#{$space} {
+    margin-top: #{$space}rem;
+  }
+
+  // Margin right
+  .mr-#{$space} {
+    margin-right: #{$space}rem;
+  }
+
+  // Margin bottom
+  .mb-#{$space} {
+    margin-bottom: #{$space}rem;
+  }
+
+  // Margin left
+  .ml-#{$space} {
+    margin-left: #{$space}rem;
+  }
+
+  // All around padding
+  .p-#{$space} {
+    padding: #{$space}rem;
+  }
+
+  // Verticle margin
+  .py-#{$space} {
+    padding: #{$space}rem 0;
+  }
+
+  // Horizontal padding
+  .px-#{$space} {
+    padding: 0 #{$space}rem;
+  }
+
+  // Padding top
+  .pt-#{$space} {
+    padding-top: #{$space}rem;
+  }
+
+  // Padding right
+  .pr-#{$space} {
+    padding-right: #{$space}rem;
+  }
+
+  // padding bottom
+  .pb-#{$space} {
+    padding-bottom: #{$space}rem;
+  }
+
+  // Padding left
+  .pl-#{$space} {
+    padding-left: #{$space}rem;
+  }
+}
