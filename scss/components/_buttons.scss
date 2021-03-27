@@ -1,0 +1,12 @@
+.btn-primary {
+  background-color: color(primary);
+  color: color(white);
+  font-size: size(md);
+  padding: 1.9rem 2.5rem;
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    background-color: darken(color(primary), 10%);
+  }
+}

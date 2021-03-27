@@ -1,0 +1,38 @@
+.home-hero {
+  @include flexCenter();
+  height: 100vh;
+
+  &-content {
+    h1 {
+      @include headingStyles();
+      font-size: size(xxl) + 4rem;
+
+      span {
+        color: color(primary);
+      }
+    }
+
+    p {
+      @include textStyles();
+      font-size: size(xxl);
+      color: color(primary);
+    }
+
+    .hero-search {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      input {
+        width: 50%;
+        padding: 2rem 2rem;
+        outline: 0;
+        border: 0;
+        border-bottom: 0.1rem solid color(primary);
+        color: color(primary);
+        background: transparent;
+        font-size: size(sm);
+      }
+    }
+  }
+}
