@@ -1,0 +1,14 @@
+.section-title {
+  @include flexCenter();
+
+  h2 {
+    @include headingStyles();
+    font-size: size(xxl);
+  }
+
+  .underline {
+    height: 0.2rem;
+    width: 10%;
+    background-color: color(primary);
+  }
+}
