@@ -1,11 +1,15 @@
 .contact {
   &-content {
-    @include sectionSpacing();
     @include maxWidthMd();
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2rem;
+    padding: 0 2rem;
+
+    @include responsive(md) {
+      grid-template-columns: 1fr;
+    }
 
     &-links {
       h4 {

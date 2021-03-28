@@ -3,9 +3,15 @@
   height: 100vh;
 
   &-content {
+    padding: 0 2rem;
+
     h1 {
       @include headingStyles();
       font-size: size(xxl) + 4rem;
+
+      @include responsive(lg) {
+        font-size: size(xxl) + 2rem;
+      }
 
       span {
         color: color(primary);
@@ -16,6 +22,10 @@
       @include textStyles();
       font-size: size(xxl);
       color: color(primary);
+
+      @include responsive(lg) {
+        font-size: size(xl);
+      }
     }
 
     .hero-search {

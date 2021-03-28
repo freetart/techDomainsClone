@@ -2,11 +2,13 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 
   .copyright {
     p {
       @include textStyles();
       font-size: size(xxs);
+      margin: 1rem;
     }
   }
 

@@ -13,6 +13,11 @@
       height: 40vh;
       cursor: grab;
 
+      @include responsive(lg) {
+        grid-template-columns: 1fr;
+        height: 70vh;
+      }
+
       &:active {
         cursor: grabbing;
       }
@@ -63,6 +68,11 @@
 
     .controls {
       text-align: center;
+      margin-top: 5rem;
+
+      @include responsive(lg) {
+        margin-top: 0;
+      }
     }
   }
 }
@@ -122,6 +132,10 @@
       .news-slide {
         img {
           width: 15rem;
+
+          @include responsive(md) {
+            width: 10rem;
+          }
         }
 
         &-4 {
