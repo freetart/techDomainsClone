@@ -1,0 +1,25 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .copyright {
+    p {
+      @include textStyles();
+      font-size: size(xxs);
+    }
+  }
+
+  &-socials {
+    a {
+      margin: 1rem;
+      color: color(white);
+      transition: all 0.3s ease-in-out;
+
+      &:hover,
+      &:focus {
+        color: color(primary);
+      }
+    }
+  }
+}
