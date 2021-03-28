@@ -1,6 +1,7 @@
 .navigation {
   position: fixed;
   background-color: color(black);
+  z-index: 500;
   width: 100%;
   padding: 2rem;
   display: flex;

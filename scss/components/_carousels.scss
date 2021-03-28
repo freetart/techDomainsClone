@@ -66,3 +66,41 @@
     }
   }
 }
+
+.spotlight {
+  &-content {
+    @include maxWidthLg();
+    @include sectionSpacing();
+
+    .spotlight-slides {
+      cursor: grab;
+
+      &:active {
+        cursor: grabbing;
+      }
+
+      .spotlight-slide {
+        text-align: center;
+
+        h4 {
+          @include textStyles();
+          font-size: size(sm);
+
+          span:nth-child(1) {
+            color: color(primary);
+            font-size: size(xxl);
+          }
+
+          span:nth-child(2) {
+            font-weight: bold;
+          }
+        }
+
+        p {
+          @include textStyles();
+          font-size: size(xxs);
+        }
+      }
+    }
+  }
+}

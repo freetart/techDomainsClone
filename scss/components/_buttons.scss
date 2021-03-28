@@ -11,3 +11,16 @@
     background-color: darken(color(primary), 10%);
   }
 }
+
+.btn-trans-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .btn-trans {
+    @extend .btn-primary;
+    background-color: transparent;
+    border: 0.1rem solid color(white);
+    text-align: center;
+  }
+}

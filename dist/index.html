@@ -209,6 +209,86 @@
           </div>
         </div>
       </section>
+
+      <!-- spotlight -->
+      <section class="spotlight py-5">
+        <div class="section-title mb-5">
+          <h2 class="mb-2">USER SPOTLIGHT</h2>
+          <div class="underline"></div>
+        </div>
+
+        <div class="spotlight-content py-5">
+          <div class="glide2 pb-5 mb-5">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides spotlight-slides">
+                <li class="glide__slide spotlight-slide spotlight-slide-1">
+                  <img
+                    src="images/home/spotlight-1.webp"
+                    alt="spotlight image 1"
+                  />
+                  <h4>raoflow<span>.</span><span>tech</span></h4>
+                  <div class="spotlight-under-line"></div>
+                  <p>Startup</p>
+                </li>
+
+                <li class="glide__slide spotlight-slide spotlight-slide-2">
+                  <img
+                    src="images/home/spotlight-2.webp"
+                    alt="spotlight image 2"
+                  />
+                  <h4>halallabs<span>.</span><span>tech</span></h4>
+                  <div class="spotlight-under-line"></div>
+                  <p>Conference</p>
+                </li>
+
+                <li class="glide__slide spotlight-slide spotlight-slide-3">
+                  <img
+                    src="images/home/spotlight-3.webp"
+                    alt="spotlight image 3"
+                  />
+                  <h4>globaldigitalbanking<span>.</span><span>tech</span></h4>
+                  <div class="spotlight-under-line"></div>
+                  <p>Corporation</p>
+                </li>
+
+                <li class="glide__slide spotlight-slide spotlight-slide-4">
+                  <img
+                    src="images/home/spotlight-4.webp"
+                    alt="spotlight image 4"
+                  />
+                  <h4>arts<span>.</span><span>tech</span></h4>
+                  <div class="spotlight-under-line"></div>
+                  <p>Startup</p>
+                </li>
+
+                <li class="glide__slide spotlight-slide spotlight-slide-5">
+                  <img
+                    src="images/home/spotlight-5.webp"
+                    alt="spotlight image 5"
+                  />
+                  <h4>rocketoon<span>.</span><span>tech</span></h4>
+                  <div class="spotlight-under-line"></div>
+                  <p>Startup</p>
+                </li>
+
+                <li class="glide__slide spotlight-slide spotlight-slide-6">
+                  <img
+                    src="images/home/spotlight-6.webp"
+                    alt="spotlight image 6"
+                  />
+                  <h4>serpens<span>.</span><span>tech</span></h4>
+                  <div class="spotlight-under-line"></div>
+                  <p>Conference</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="btn-trans-container">
+            <a href="#!" class="btn-trans">Show More</a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="js/main.js"></script>
@@ -224,6 +304,14 @@
         hoverpause: true,
       };
       new Glide(".glide1", config).mount();
+
+      const config2 = {
+        type: "carousel",
+        autoplay: 4000,
+        hoverpause: true,
+        perView: 3,
+      };
+      new Glide(".glide2", config2).mount();
     </script>
   </body>
 </html>
