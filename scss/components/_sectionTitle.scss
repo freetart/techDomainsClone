@@ -12,3 +12,11 @@
     background-color: color(primary);
   }
 }
+
+.section-title-light {
+  @extend .section-title;
+
+  h2 {
+    color: color(black);
+  }
+}

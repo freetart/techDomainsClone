@@ -9,6 +9,10 @@
       integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="../node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="shortcut icon" href="images/favicon/koala.ico" />
     <link rel="stylesheet" href="css/main.min.css" />
@@ -122,11 +126,104 @@
           </div>
         </div>
       </section>
+
+      <!-- stories -->
+      <section class="stories py-5">
+        <div class="section-title-light mb-5">
+          <h2 class="mb-2">BREAKTHROUGH STORIES</h2>
+          <div class="underline"></div>
+        </div>
+
+        <div class="stories-content py-5">
+          <div class="glide1">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides carousel-slides">
+                <li class="glide__slide carousel-slide carousel-slide-1">
+                  <div class="carousel-slide-img-container"></div>
+                  <div class="carousel-slide-info">
+                    <img src="images/home/ces-logo.png" alt="ces logo" />
+                    <blockquote>
+                      <p class="py-2">
+                        "We stand for innovation... CES is well known as the
+                        world's foremost innovation event and we're happy to
+                        have selected a domain name on .TECH that conveys what
+                        we stand for in a succinct way."
+                      </p>
+                      <cite>Jeff Joseph - SVP of Communications</cite>
+                    </blockquote>
+                  </div>
+                </li>
+
+                <li class="glide__slide carousel-slide carousel-slide-2">
+                  <div class="carousel-slide-img-container"></div>
+                  <div class="carousel-slide-info">
+                    <img
+                      src="images/home/hollywood-logo.png"
+                      alt="hollywood logo"
+                    />
+                    <blockquote>
+                      <p class="py-2">
+                        "What is better than HOLLYWOOD.TECH...for a website that
+                        brings together two vastly successful giants of our
+                        modern world: Hollywood and Technology! The name is
+                        concise yet descriptive, and just perfect for my
+                        business debut in the tech sector."
+                      </p>
+                      <cite>Sheeraz Hasan - Marketing Visionary</cite>
+                    </blockquote>
+                  </div>
+                </li>
+
+                <li class="glide__slide carousel-slide carousel-slide-3">
+                  <div class="carousel-slide-img-container"></div>
+                  <div class="carousel-slide-info">
+                    <img
+                      src="images/home/stronger-logo.png"
+                      alt="stronger logo"
+                    />
+                    <blockquote>
+                      <p class="py-2">
+                        "We wanted to shorten our name... we liked stronger but
+                        wanted people to know that we're in technology. Our name
+                        became: STRONGER.TECH. Short, Powerful, and conveyed
+                        what we do and what industry we are in. We get lots of
+                        questions and compliments on it."
+                      </p>
+                      <cite
+                        >Heather Stratford - CEO, Stronger International</cite
+                      >
+                    </blockquote>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div data-glide-el="controls" class="controls mt-5">
+              <button data-glide-dir="<" class="btn-primary m-2">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button data-glide-dir=">" class="btn-primary m-2">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
     <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({ offset: 200, duration: 1000, once: true });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+      const config = {
+        type: "carousel",
+        autoplay: 8000,
+        hoverpause: true,
+      };
+      new Glide(".glide1", config).mount();
     </script>
   </body>
 </html>

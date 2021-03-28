@@ -1,0 +1,68 @@
+.stories {
+  @include sectionSpacing();
+  background: color(white);
+
+  &-content {
+    @include maxWidthLg();
+    color: color(black);
+
+    .carousel-slide {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      height: 40vh;
+      cursor: grab;
+
+      &:active {
+        cursor: grabbing;
+      }
+
+      &-info {
+        img {
+          width: 30rem;
+        }
+
+        p {
+          @include textStyles();
+          font-size: size(xs);
+        }
+
+        cite {
+          @include textStyles();
+          font-size: size(xxs);
+        }
+      }
+    }
+
+    .carousel-slide-1 {
+      .carousel-slide-img-container {
+        background: url("../images/home/ces-img.jpg") center center/cover
+          no-repeat;
+      }
+    }
+
+    .carousel-slide-2 {
+      .carousel-slide-img-container {
+        background: url("../images/home/hollywood-img.jpg") center center/cover
+          no-repeat;
+      }
+    }
+
+    .carousel-slide-3 {
+      .carousel-slide-info {
+        img {
+          width: 15rem;
+        }
+      }
+
+      .carousel-slide-img-container {
+        background: url("../images/home/strongertech-img.jpg") center
+          center/cover no-repeat;
+      }
+    }
+
+    .controls {
+      text-align: center;
+    }
+  }
+}
