@@ -12,6 +12,11 @@
   }
 }
 
+.btn-primary-slim {
+  @extend .btn-primary;
+  padding: 1rem 2rem;
+}
+
 .btn-trans-container {
   @include flexCenter();
 

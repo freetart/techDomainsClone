@@ -1,0 +1,55 @@
+.contact {
+  &-content {
+    @include sectionSpacing();
+    @include maxWidthMd();
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+
+    &-links {
+      h4 {
+        @include headingStyles();
+        font-size: size(md);
+      }
+
+      a {
+        @include textStyles();
+        color: color(primary);
+        font-size: size(sm);
+
+        span {
+          font-weight: bold;
+          font-style: italic;
+        }
+      }
+    }
+
+    &-form {
+      p {
+        @include textStyles();
+        font-size: size(md);
+      }
+
+      .form-group {
+        label {
+          @include headingStyles();
+          font-size: size(xs);
+          display: block;
+        }
+
+        input {
+          padding: 1rem 2rem;
+          width: 100%;
+        }
+
+        textarea {
+          width: 100%;
+          height: 20vh;
+          padding: 1rem;
+          resize: none;
+        }
+      }
+    }
+  }
+}

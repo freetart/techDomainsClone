@@ -109,7 +109,8 @@
   background-color: color(white);
 
   &-content {
-    @include maxWidthLg();
+    @include maxWidthMd();
+    text-align: center;
 
     .news-slides {
       cursor: grab;
