@@ -13,9 +13,7 @@
 }
 
 .btn-trans-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flexCenter();
 
   .btn-trans {
     @extend .btn-primary;

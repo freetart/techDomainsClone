@@ -104,3 +104,37 @@
     }
   }
 }
+
+.news {
+  background-color: color(white);
+
+  &-content {
+    @include maxWidthLg();
+
+    .news-slides {
+      cursor: grab;
+
+      &:active {
+        cursor: grabbing;
+      }
+
+      .news-slide {
+        img {
+          width: 15rem;
+        }
+
+        &-4 {
+          img {
+            width: 8rem;
+          }
+        }
+
+        &-6 {
+          img {
+            width: 5rem;
+          }
+        }
+      }
+    }
+  }
+}
