@@ -49,4 +49,10 @@
       @content;
     }
   }
+
+  @if ($breakpoint == sm) {
+    @media (max-width: 400px) {
+      @content;
+    }
+  }
 }
