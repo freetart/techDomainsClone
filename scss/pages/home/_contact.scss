@@ -12,6 +12,8 @@
     }
 
     &-links {
+      overflow: hidden;
+
       h4 {
         @include headingStyles();
         font-size: size(md);
