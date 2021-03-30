@@ -42,6 +42,10 @@
         color: color(primary);
         background: transparent;
         font-size: size(sm);
+
+        @include responsive(sm) {
+          font-size: size(xs);
+        }
       }
     }
   }

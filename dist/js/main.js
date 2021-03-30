@@ -25,7 +25,7 @@ overlay.addEventListener("click", () => {
 
 // hero search
 const textDisplay = document.querySelector(".hero-input");
-const phrases = ["habibdev.tech", "traversymedia.tech", "codehawke.tech"];
+const phrases = ["habibdev.tech", "traversy.tech", "codehawke.tech"];
 let i = 0;
 let j = 0;
 let currentPhrase = [];
@@ -69,6 +69,41 @@ function loop() {
   setTimeout(loop, time);
 }
 loop();
+
+// stats counter
+const counters = document.querySelectorAll(".counter");
+const statsNumbers = document.querySelector(".stats-numbers");
+const options = { rootMargin: "1px" };
+const observer = new IntersectionObserver(function (entries, observer) {
+  entries.forEach((entry) => {
+    if (entry.target) {
+      countStats();
+    }
+  });
+}, options);
+observer.observe(statsNumbers);
+
+function countStats() {
+  counters.forEach((counter) => {
+    counter.innerText = "0";
+
+    const updateCounter = () => {
+      const target = +counter.getAttribute("data-target");
+      const c = +counter.innerText;
+
+      const increment = target / 200;
+
+      if (c < target) {
+        counter.innerText = `${Math.ceil(c + increment)}`;
+        setTimeout(updateCounter, 1);
+      } else {
+        counter.innerText = target;
+      }
+    };
+
+    updateCounter();
+  });
+}
 
 // carousels
 const width = window.innerWidth;

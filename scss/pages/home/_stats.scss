@@ -50,6 +50,18 @@
         justify-content: space-evenly;
         flex-wrap: wrap;
 
+        .counter-container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          span {
+            @include headingStyles();
+            font-size: size(xxl);
+            color: color(primary);
+          }
+        }
+
         .stats-number {
           text-align: center;
           padding: 2rem;
