@@ -46,7 +46,8 @@
     transition: all 0.3s ease-in-out;
 
     &:hover,
-    &:focus {
+    &:focus,
+    &.active {
       background-color: color(primary);
     }
   }
