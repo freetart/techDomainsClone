@@ -1,0 +1,35 @@
+.companies-section {
+  &-content {
+    @include maxWidthLg();
+    padding: 0 2rem;
+
+    p {
+      @include textStyles();
+      font-size: size(md);
+      text-align: center;
+
+      span {
+        color: color(primary);
+      }
+    }
+
+    .companies {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .company {
+        padding: 1rem;
+
+        img {
+          transition: all 0.3s ease-in-out;
+        }
+
+        img:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}

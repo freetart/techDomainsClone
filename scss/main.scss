@@ -10,6 +10,7 @@
 @import "components/buttons";
 @import "components/sectionTitle";
 @import "components/carousels";
+@import "components/innerPageContact";
 
 // Layout
 @import "layout/navigation";
@@ -22,7 +23,9 @@
 @import "pages/home/contact";
 
 @import "pages/liveSites/liveSites";
-@import "pages/liveSites/liveSitesContact";
+
+@import "pages/techOnTheMove/companies";
+@import "pages/techOnTheMove/programs";
 
 // Themes
 

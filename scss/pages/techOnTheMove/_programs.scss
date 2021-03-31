@@ -1,0 +1,40 @@
+.programs {
+  @include sectionSpacing();
+
+  &-content {
+    @include maxWidthLg();
+    @include sectionSpacing();
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+
+    @include responsive(lg) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .programs-card {
+    overflow: hidden;
+    border-radius: 1rem;
+  }
+
+  .programs-card img {
+    transition: 0.3s ease-in-out;
+  }
+
+  .programs-card img:hover {
+    transform: scale(1.1);
+  }
+
+  .program-card-info {
+    background: color(white);
+    padding: 1.5rem;
+    text-align: center;
+
+    p {
+      @include textStyles();
+      color: color(black);
+      font-size: size(xxs);
+    }
+  }
+}

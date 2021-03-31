@@ -13,6 +13,15 @@
     width: 10%;
     background-color: color(primary);
   }
+
+  span:nth-child(1) {
+    color: color(primary);
+  }
+
+  span:nth-child(2) {
+    font-weight: bold;
+    font-style: italic;
+  }
 }
 
 .section-title-light {
@@ -23,11 +32,16 @@
   }
 }
 
-.live-sites-title {
+.inner-page-title {
   padding-top: 20rem;
 
   span {
     font-size: size(xl);
     color: color(primary);
+  }
+
+  p {
+    @include textStyles();
+    font-size: size(sm);
   }
 }
