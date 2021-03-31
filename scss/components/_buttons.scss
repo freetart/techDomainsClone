@@ -27,3 +27,25 @@
     text-align: center;
   }
 }
+
+.live-sites-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+
+  a {
+    @include headingStyles();
+    font-size: size(sm);
+    color: color(white);
+    background-color: color(secondary);
+    padding: 2rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+
+    &:hover,
+    &:focus {
+      background-color: color(primary);
+    }
+  }
+}
