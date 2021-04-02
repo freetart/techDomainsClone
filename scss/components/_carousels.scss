@@ -1,6 +1,7 @@
 .stories {
   @include sectionSpacing();
   background: color(white);
+  overflow-x: hidden;
 
   &-content {
     @include maxWidthLg();
@@ -78,6 +79,8 @@
 }
 
 .spotlight {
+  overflow-x: hidden;
+
   &-content {
     @include maxWidthLg();
     @include sectionSpacing();
@@ -116,6 +119,7 @@
 }
 
 .news {
+  overflow-x: hidden;
   background-color: color(white);
 
   &-content {
