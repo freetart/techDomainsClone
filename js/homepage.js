@@ -131,11 +131,3 @@ const newsCarousel = () => {
   new Glide(".glide3", newsCarouselObj).mount();
 };
 newsCarousel();
-
-// EVENT LISTENERS
-// for carousels responsiveness
-window.addEventListener("resize", () => {
-  if (width <= 650) {
-    location.reload();
-  }
-});
