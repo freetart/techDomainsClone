@@ -1,0 +1,133 @@
+.blog {
+  &-content {
+    @include maxWidthLg();
+    @include sectionSpacing();
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 5rem;
+
+    @include responsive(lg) {
+      grid-template-columns: 1fr;
+    }
+
+    &-articles {
+      .blog-article {
+        overflow: hidden;
+        background-color: color(white);
+
+        img {
+          transition: all 0.3s ease-in-out;
+        }
+
+        img:hover,
+        img:focus {
+          transform: scale(1.05);
+        }
+
+        .blog-article-body {
+          padding: 3rem 2rem;
+          color: color(black);
+
+          .blog-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            small {
+              @include textStyles();
+              font-size: size(xs);
+
+              a {
+                color: red;
+                transition: all 0.3s ease-in-out;
+
+                &:hover,
+                &:focus {
+                  color: color(primary);
+                }
+              }
+            }
+          }
+
+          .blog-title {
+            @include headingStyles();
+            display: block;
+            font-size: size(xl);
+            color: color(black);
+            transition: all 0.3s ease-in-out;
+
+            &:hover,
+            &:focus {
+              color: color(primary);
+            }
+          }
+
+          p {
+            @include textStyles();
+            font-size: size(sm);
+          }
+        }
+      }
+    }
+
+    &-nav {
+      height: auto;
+
+      @include responsive(lg) {
+        display: none;
+      }
+
+      &-inner {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 15%;
+
+        .recent-posts {
+          display: flex;
+          flex-direction: column;
+
+          h4 {
+            @include headingStyles();
+            font-size: size(md);
+          }
+
+          li {
+            margin: 2rem 0;
+            list-style: circle;
+
+            a {
+              @include textStyles();
+              font-size: size(xxs);
+              color: color(white);
+              transition: all 0.3s ease-in-out;
+
+              &:hover,
+              &:focus {
+                color: color(primary);
+              }
+            }
+          }
+        }
+
+        .blog-socials {
+          h4 {
+            @include headingStyles();
+            font-size: size(md);
+          }
+
+          a {
+            color: color(white);
+            font-size: size(xxs);
+            margin: 0 2rem 0 0;
+            transition: all 0.3s ease-in-out;
+
+            &:hover,
+            &:focus {
+              color: color(primary);
+            }
+          }
+        }
+      }
+    }
+  }
+}
