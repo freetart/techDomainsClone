@@ -1,11 +1,22 @@
-img {
+.login-signup-logo {
   position: fixed;
   top: 2rem;
   left: 2rem;
   width: 10rem;
 }
 
-.login-form {
+.sign-up-btn {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  display: none;
+
+  @include responsive(lg) {
+    display: block;
+  }
+}
+
+.login-signup-form {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -29,6 +40,10 @@ img {
 
   &-content {
     padding: 5rem;
+
+    @include responsive(md) {
+      padding: 2rem;
+    }
 
     .form-title {
       @include headingStyles();
@@ -68,7 +83,7 @@ img {
       font-size: size(xxs);
     }
 
-    .login-form-bottom {
+    .login-signup-form-bottom {
       @include responsive(lg) {
         display: none;
       }
