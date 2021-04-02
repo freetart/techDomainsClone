@@ -34,7 +34,7 @@
     p {
       @include textStyles();
       color: color(black);
-      font-size: size(xxs);
+      font-size: size(xxs) + 0.2rem;
     }
   }
 }
