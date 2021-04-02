@@ -4,3 +4,74 @@ img {
   left: 2rem;
   width: 10rem;
 }
+
+.login-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: color(white);
+  color: color(black);
+  border-radius: 0.5rem;
+  width: 30%;
+
+  @include responsive(xl) {
+    width: 60%;
+  }
+
+  @include responsive(md) {
+    width: 80%;
+  }
+
+  @include responsive(sm) {
+    width: 90%;
+  }
+
+  &-content {
+    padding: 5rem;
+
+    .form-title {
+      @include headingStyles();
+      font-size: size(xl);
+      text-align: center;
+    }
+
+    .underline {
+      height: 0.1rem;
+      width: 100%;
+      background-color: color(black);
+    }
+
+    .form-group {
+      input {
+        background-color: transparent;
+        border: 0;
+        outline: 0;
+        border-bottom: 0.2rem solid color(black);
+        padding: 1rem;
+        width: 100%;
+        font-size: size(xs);
+
+        &:focus {
+          border-bottom: 0.2rem solid color(primary);
+        }
+      }
+    }
+
+    .btn-primary-slim {
+      width: 100%;
+      text-align: center;
+    }
+
+    .forgot-info {
+      color: color(primary);
+      font-size: size(xxs);
+    }
+
+    .login-form-bottom {
+      @include responsive(lg) {
+        display: none;
+      }
+    }
+  }
+}

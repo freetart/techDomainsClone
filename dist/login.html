@@ -20,13 +20,34 @@
   </head>
   <body class="login-signup-body">
     <!-- logo -->
-    <a href="index.html">
+    <a href="index.html" tabindex="0">
       <img src="images/home/dot-tech-logo.png" alt="dot tech logo" />
     </a>
 
     <!-- login form -->
     <main>
-      <form class="login-form"></form>
+      <form class="login-form">
+        <div class="login-form-content">
+          <div class="login-form-top">
+            <h1 class="form-title mb-2">SIGN IN TO PLACE YOUR ORDER!</h1>
+            <div class="underline mb-5"></div>
+            <div class="form-group mb-2">
+              <input type="email" placeholder="Email" />
+            </div>
+            <div class="form-group mb-2">
+              <input type="password" placeholder="Password" />
+            </div>
+            <a href="#!" class="btn-primary-slim mb-2">Sign In</a>
+            <a href="#!" class="forgot-info">Can't access your account?</a>
+          </div>
+
+          <div class="login-form-bottom">
+            <div class="underline mt-2"></div>
+            <h2 class="form-title my-2">DON'T HAVE AN ACCOUNT?</h2>
+            <a href="#!" class="btn-primary-slim">Create Account</a>
+          </div>
+        </div>
+      </form>
     </main>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
