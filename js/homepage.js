@@ -108,13 +108,15 @@ const spotlightCarousel = () => {
     autoplay: 4000,
     hoverpause: true,
     perView: 3,
+    breakpoints: {
+      650: {
+        perView: 2,
+      },
+      400: {
+        perView: 1,
+      },
+    },
   };
-  if (width <= 650) {
-    spotlightCarouselObj.perView = 2;
-  }
-  if (width <= 400) {
-    spotlightCarouselObj.perView = 1;
-  }
   new Glide(".glide2", spotlightCarouselObj).mount();
 };
 spotlightCarousel();
@@ -124,10 +126,15 @@ const newsCarousel = () => {
     type: "carousel",
     autoplay: 2000,
     perView: 4,
+    breakpoints: {
+      650: {
+        perView: 3,
+      },
+      400: {
+        perView: 2,
+      },
+    },
   };
-  if (width <= 650) {
-    newsCarouselObj.perView = 2;
-  }
   new Glide(".glide3", newsCarouselObj).mount();
 };
 newsCarousel();
